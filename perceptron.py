@@ -66,7 +66,6 @@ if __name__ == '__main__':
 
 	# Simple AND Gate Test
 	# There are infinite solutions to the AND gate test so Perceptron will converge to a different solution every time
-	# You can replace x and y with your own data
 
 	x = np.array( [  [0,0], [0,1], [1,0], [1,1] ] );
 	y = np.array( [0,0,0,1] );
