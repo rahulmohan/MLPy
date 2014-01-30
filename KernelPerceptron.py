@@ -83,7 +83,7 @@ if __name__ == '__main__':
 	K,weights,bias = train(x,y,1,0.02,1000);
 	predictions,margins = test(weights,bias,K);
 
-	# Plot decision boundary - only works if # of features = 2
+	# Plot non-linear decision boundary - only works if # of features = 2
 
 	w1Point = (-1*bias)/weights[0];
 	w2Point = (-1*bias)/weights[1];
