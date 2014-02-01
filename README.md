@@ -7,3 +7,4 @@ Algorithms Finished:
 
 - Simple Perceptron (Perceptron.py)
 - Kernel Perceptron (KernelPerceptron.py)
+- Logistic Regression (LogisticRegression.py)
