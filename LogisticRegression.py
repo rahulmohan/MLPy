@@ -22,11 +22,11 @@ def train(x,y,learningRate,maxIter):
 				# The decision function is given by the line w'x + b = 0;
 
 				z = np.dot(x[i,:],weights) + bias;
-				logit = sigmoid(z);
+				logistic = sigmoid(z);
 
 				# Logistic regression probability estimate
 
-				if (logit > 0.5):
+				if (logistic > 0.5):
 					target = 1;
 				else:
 					target = 0;
@@ -59,10 +59,10 @@ def test(weights, bias, x):
 		
 		# Calculate w'x + b and sigmoid of output
 		z = np.dot(x[i,:],weights) + bias;
-		logit = sigmoid(z);
+		logistic = sigmoid(z);
 		
 		# Get decision from hardlim function
-		if (logit > 0.5):
+		if (logistic > 0.5):
 			target = 1;
 		else:
 			target = 0;
@@ -101,5 +101,5 @@ if __name__ == '__main__':
 	plt.show()
 
 	print "Predicted Labels: " + str(predictions)
-	print "Log-Likelihood of Labels: " + str(probabilties);
+	print "Probability of (event|x[i,:]): " + str(probabilties);
 	print "Actual Labels: " + str(list(y))
